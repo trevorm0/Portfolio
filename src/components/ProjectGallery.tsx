@@ -100,6 +100,62 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
             <p>{project.solution}</p>
           </div>
         )}
+
+{/* Project features */}
+{project.features && project.features.length > 0 && (
+  <div className="case-block">
+    <h3>Key Features</h3>
+    <ul>
+      {project.features.map((feature, index) => (
+        <li key={index}>{feature}</li>
+      ))}
+    </ul>
+  </div>
+)}
+
+{/* Personal contributions */}
+{project.contributions && project.contributions.length > 0 && (
+  <div className="case-block">
+    <h3>My Contributions</h3>
+    <ul>
+      {project.contributions.map((contribution, index) => (
+        <li key={index}>{contribution}</li>
+      ))}
+    </ul>
+  </div>
+)}
+
+{/* Additional screenshots */}
+{project.gallery && project.gallery.length > 0 && (
+  <div className="case-block">
+    <h3>Project Screenshots</h3>
+
+    <div className="case-gallery">
+      {project.gallery.map((media, index) => (
+        <figure key={`${media.src}-${index}`}>
+          {media.type === 'image' ? (
+            <img
+              src={media.src}
+              alt={media.alt}
+              loading="lazy"
+            />
+          ) : (
+            <video
+              src={media.src}
+              controls
+              preload="metadata"
+            />
+          )}
+
+          {media.caption && (
+            <figcaption>{media.caption}</figcaption>
+          )}
+        </figure>
+      ))}
+    </div>
+  </div>
+)}
+
         
       </motion.div>
     </motion.div>

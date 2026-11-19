@@ -1233,3 +1233,47 @@ code {
   background: var(--cyan);
   color: #fff;
 }
+
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.case-gallery figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.case-gallery img,
+.case-gallery video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.case-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.case-block ul {
+  padding-left: 20px;
+}
+
+.case-block li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .case-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+

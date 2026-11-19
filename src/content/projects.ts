@@ -8,10 +8,33 @@ export const projects: Project[] = [
       'An academic certificate verification system designed to help employers and institutions authenticate academic qualifications using QR codes.',
     category: 'Full-Stack Development',
     technologies: ['PHP', 'MySQL', 'QR Codes', 'JavaScript'],
-    status: 'In Progress',
+    status: 'Completed',
     featured: true,
     order: 1,
     date: '2026',
+
+     // Main screenshot displayed on the project card
+    thumbnail: {
+      type: 'image',
+      src: '/public/Certsverify/Registrar dashboard.jpeg',
+      alt: 'CertVerify dashboard'
+    },
+
+    // Additional screenshots displayed inside the project details
+    gallery: [
+      {
+        type: 'image',
+        src: '/public/Certsverify/Verifivation page.jpeg',
+        alt: 'Certificate verification interface',
+        caption: 'Certificate Verification'
+      },
+      {
+        type: 'image',
+        src: '/public/Certsverify/Certsverify homepage.jpeg',
+        alt: 'CertVerify system homepage',
+        caption: 'System Homepage'
+      }
+    ],
 
     problem:
       'Manual academic certificate verification can be time-consuming and makes it difficult for employers to establish the authenticity of academic qualifications.',

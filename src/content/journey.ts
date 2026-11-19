@@ -4,7 +4,6 @@ import type { Milestone } from './types';
 export const milestones: Milestone[] = [
   {
     id: 'education-start',
-    placeholder: true,
     kind: 'education',
     title: '[Started your programme]',
     date: '[April/ 2024]',
@@ -13,7 +12,6 @@ export const milestones: Milestone[] = [
   },
   {
     id: 'first-project',
-    placeholder: true,
     kind: 'project',
     title: '[FitLife]',
     date: '[November/2026]',

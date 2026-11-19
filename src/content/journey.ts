@@ -5,7 +5,7 @@ export const milestones: Milestone[] = [
   {
     id: 'education-start',
     kind: 'education',
-    title: '[Started your programme]',
+    title: '[Strathmore University]',
     date: '[April/ 2024]',
     description: '[Curretly a student at Strathmore univesity pursuing a degree in Bachelor of Business Information Technology  (BBIT)]',
     skills: [],

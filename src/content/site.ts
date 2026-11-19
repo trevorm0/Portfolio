@@ -9,6 +9,7 @@ import type { SiteContent } from './types.ts';
  */
 export const site: SiteContent = {
   name: 'Trevor Mbugua',
+  monogram: 'TM',
   title: 'IT enthusiast',
   tagline:
     'Software development student building full-stack web applications, ' +

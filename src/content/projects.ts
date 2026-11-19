@@ -13,28 +13,28 @@ export const projects: Project[] = [
     order: 1,
     date: '2026',
 
-     // Main screenshot displayed on the project card
-    thumbnail: {
-      type: 'image',
-      src: '/public/Certsverify/Registrar dashboard.jpeg',
-      alt: 'CertVerify dashboard'
-    },
+    
+thumbnail: {
+  type: 'image',
+  src: '/Certsverify/Certsverify homepage.jpeg',
+  alt: 'CertVerify homepage'
+},
 
-    // Additional screenshots displayed inside the project details
-    gallery: [
-      {
-        type: 'image',
-        src: '/public/Certsverify/Verifivation page.jpeg',
-        alt: 'Certificate verification interface',
-        caption: 'Certificate Verification'
-      },
-      {
-        type: 'image',
-        src: '/public/Certsverify/Certsverify homepage.jpeg',
-        alt: 'CertVerify system homepage',
-        caption: 'System Homepage'
-      }
-    ],
+gallery: [
+  {
+    type: 'image',
+    src: '/Certsverify/Registrar dashboard.jpeg',
+    alt: 'Registrar dashboard',
+    caption: 'Registrar Dashboard'
+  },
+  {
+    type: 'image',
+    src: '/Certsverify/Verification page.jpeg',
+    alt: 'Certificate verification page',
+    caption: 'Certificate Verification'
+  }
+],
+
 
     problem:
       'Manual academic certificate verification can be time-consuming and makes it difficult for employers to establish the authenticity of academic qualifications.',

@@ -42,5 +42,6 @@ function seoFromContent(): Plugin {
 }
 
 export default defineConfig({
+  base: '/Portfolio/',
   plugins: [react(), seoFromContent()],
 });

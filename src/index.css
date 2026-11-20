@@ -869,13 +869,6 @@ code {
   display: grid;
   gap: 2.5rem;
 }
-@media (min-width: 800px) {
-  .contact-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 3.5rem;
-    align-items: start;
-  }
-}
 .contact-lead {
   margin-top: -1rem;
   margin-bottom: 1.5rem;

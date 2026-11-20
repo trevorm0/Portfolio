@@ -10,7 +10,7 @@ export default function Footer() {
         <p>
           © {year} {name}
         </p>
-        <p className="muted">Built with React · Vite · TypeScript</p>
+        <p className="muted"></p>
       </div>
     </footer>
   );
